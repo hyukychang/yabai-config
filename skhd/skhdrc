@@ -47,6 +47,8 @@ ctrl + alt - return : yabai -m window --toggle zoom-fullscreen
 # balance out tree of windows (resize to occupy same area)
 # shift + alt - e : yabai -m space --balance
 ctrl + alt - backspace : yabai -m space --balance
+ctrl - backspace : yabai -m space --balance
+cmd- backspace : yabai -m space --balance
 
 # swap windows
 cmd + ctrl - j : yabai -m window --swap south
@@ -67,10 +69,19 @@ ctrl + alt - k : yabai -m window --warp north
 ctrl + alt - h : yabai -m window --warp west
 ctrl + alt - l : yabai -m window --warp east
 
+cmd + alt - j : yabai -m window --warp south
+cmd + alt - k : yabai -m window --warp north
+cmd + alt - h : yabai -m window --warp west
+cmd + alt - l : yabai -m window --warp east
+
 ctrl + alt - down : yabai -m window --warp south
 ctrl + alt - up : yabai -m window --warp north
 ctrl + alt - left : yabai -m window --warp west
 ctrl + alt - right : yabai -m window --warp east
+
+# move window toogle split
+cmd + alt - backspace : yabai -m window --toggle split
+cmd + ctrl - backspace : yabai -m window --toggle split
 
 # move window to other display left and right
 cmd + ctrl + alt - down : yabai -m window --display south; yabai -m display --focus south;
